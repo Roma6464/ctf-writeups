@@ -48,6 +48,12 @@ In the Credential Access section of the 2016 campaign against the Ukrainian powe
 
 **Answer: `T1110`**
 
+![Texte alternatif](./Image/Capture002.PNG)
+![Texte alternatif](./Image/Capture003.PNG)
+![Texte alternatif](./Image/Capture004.PNG)
+![Texte alternatif](./Image/Capture005.PNG)
+![Texte alternatif](./Image/Capture006.PNG)
+
 ---
 
 ### Task 3
@@ -56,6 +62,8 @@ In the Credential Access section of the 2016 campaign against the Ukrainian powe
 The 2016 campaign documents the use of a VBS script to automate certain actions on the compromised systems.
 
 **Answer: `ufn.vbs`**
+
+![Texte alternatif](./Image/Capture007.PNG)
 
 ---
 
@@ -66,16 +74,22 @@ During the 2022 campaign, the group abused a web server application to drop a **
 
 **Answer: `T1505.003`** (Server Software Component: Web Shell)
 
+![Texte alternatif](./Image/Capture008.PNG)
+![Texte alternatif](./Image/Capture009.PNG)
+![Texte alternatif](./Image/Capture0010.PNG)
+![Texte alternatif](./Image/Capture0011.PNG)
+
+
 ---
 
 ### Task 5
 **Question:** What is the name of the malware / tool used in question 4?
 
-The tool used to deploy the web shell and maintain persistent access is **Neo-reGeorg**, an HTTP/HTTPS tunnel based on reGeorg.
+I really struggled with this specific task, as the exact name wasn't immediately obvious to me on the main MITRE page. After conducting some external internet research (OSINT) based on the 2022 campaign details, I found the answer. The tool used to deploy the web shell and maintain persistent access is Neo-reGeorg, an HTTP/HTTPS tunnel based on reGeorg.
 
-**Answer: `Neo-reGeorg`**
+**Answer: 'Neo-reGeorg'**
 
----
+![Texte alternatif](./Image/Capture0012.PNG)
 
 ### Task 6
 **Question:** Which SCADA application binary was abused by the group to achieve code execution on SCADA Systems in the same campaign in 2022?
@@ -83,6 +97,9 @@ The tool used to deploy the web shell and maintain persistent access is **Neo-re
 In the 2022 campaign targeting ICS/SCADA systems, the group abused a legitimate binary from the SCADA application to execute malicious code.
 
 **Answer: `scilc.exe`**
+
+![Texte alternatif](./Image/Capture0014.PNG)
+![Texte alternatif](./Image/Capture0013.PNG)
 
 ---
 
@@ -95,6 +112,9 @@ The full command line documented in MITRE for the execution of `scilc.exe` again
 
 C:\sc\prog\exec\scilc.exe -do pack\scil\s1.txt
 
+![Texte alternatif](./Image/Capture0015.PNG)
+![Texte alternatif](./Image/Capture0016.PNG)
+![Texte alternatif](./Image/Capture0018.PNG)
 
 ---
 
@@ -105,6 +125,8 @@ For data destruction, the group deployed **CaddyWiper**, a wiper malware designe
 
 **Answer: `CaddyWiper`**
 
+![Texte alternatif](./Image/Capture0019.PNG)
+
 ---
 
 ### Task 9
@@ -114,14 +136,21 @@ In addition to its destructive capabilities, CaddyWiper can interact directly wi
 
 **Answer: `T1106`** (Native API)
 
+![Texte alternatif](./Image/Capture0020.PNG)
+![Texte alternatif](./Image/Capture0021.PNG)
+![Texte alternatif](./Image/Capture0022.PNG)
+![Texte alternatif](./Image/Capture0023.PNG)
+
 ---
 
 ### Task 10
 **Question:** They are associated with an auto-spreading malware that acted as a ransomware while having worm-like features. What is the name of this malware?
 
-This refers to **NotPetya**, deployed in 2017. Disguised as ransomware, NotPetya was actually a wiper with self-spreading capabilities across the network, causing billions of dollars in global damage.
+I didn't know the exact name of this specific malware off the top of my head, so I relied on a targeted web search using the clues provided in the prompt. By searching for keywords like `Sandworm "auto-spreading" ransomware "worm-like"`, the results immediately pointed to **NotPetya**, deployed in 2017. Disguised as ransomware, NotPetya was actually a wiper with self-spreading capabilities across the network, causing billions of dollars in global damage.
 
 **Answer: `NotPetya`**
+
+![Texte alternatif](./Image/Capture0024.PNG)
 
 ---
 
@@ -132,6 +161,9 @@ NotPetya exploited the **EternalBlue** vulnerability in the SMBv1 protocol, cove
 
 **Answer: `MS17-010`**
 
+![Texte alternatif](./Image/Capture0026.PNG)
+![Texte alternatif](./Image/Capture0027.PNG)
+
 ---
 
 ### Task 12
@@ -140,6 +172,10 @@ NotPetya exploited the **EternalBlue** vulnerability in the SMBv1 protocol, cove
 To target satellite modems (notably at the beginning of the war in Ukraine in 2022), Sandworm used **AcidRain**, a wiper specifically designed for embedded network equipment.
 
 **Answer: `AcidRain`**
+
+![Texte alternatif](./Image/Capture0028.PNG)
+![Texte alternatif](./Image/Capture0029.PNG)
+![Texte alternatif](./Image/Capture0030.PNG)
 
 ---
 
@@ -150,14 +186,18 @@ To avoid detection on the standard SSH port (22), Sandworm configured its SSH se
 
 **Answer: `6789`**
 
+![Texte alternatif](./Image/Capture0031.PNG)
+![Texte alternatif](./Image/Capture0033.PNG)
+
 ---
-
 ### Task 14
-**Question:** Which specific group is known to have collaborated with Sandworm Team?
+**Question:** The Sandworm Team has been assisted by another APT group on various operations. Which specific group is known to have collaborated with them?
 
-Sandworm Team collaborated with **APT28** (also known as Fancy Bear / Sofacy), another Russian cyber espionage group affiliated with the GRU, on several targeted operations.
+To identify this specific partnership, I conducted targeted Open-Source Intelligence (OSINT) research. By querying threat intelligence vendor reports and security databases using advanced search operators (e.g., `"Sandworm Team" AND ("assisted by" OR "collaborated with") AND APT`), the findings consistently pointed to **APT28** (also tracked as Fancy Bear or Sofacy). Both groups are known to operate under the umbrella of Russia's GRU and have a documented history of coordinating on major cyber campaigns.
 
 **Answer: `APT28`**
+
+![Texte alternatif](./Image/Capture0025.PNG)
 
 ---
 
