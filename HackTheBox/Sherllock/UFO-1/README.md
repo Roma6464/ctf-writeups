@@ -35,9 +35,9 @@ The approach for each task:
 
 By checking the sources cited by MITRE for the G0034 group, the references mention that Sandworm Team began its operations as early as **2009**.
 
-![Texte alternatif](/root/Desktop/ctf-writeups/Image/Capture001.PNG)
-
 **Answer: `2009`**
+
+![Texte alternatif](./Image/Capture001.PNG)
 
 ---
 
